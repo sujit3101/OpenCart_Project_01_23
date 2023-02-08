@@ -26,7 +26,7 @@ public class TC_001_AccountRegistrationTest extends BaseClass {
 		
 		regpage.setLastName(randomeString().toUpperCase());
 		
-		//regpage.setEmail(randomeString()+"@gmail.com");// randomly generated the email
+		regpage.setEmail(randomeString()+"@gmail.com");// randomly generated the email
 		
 		//regpage.setTelephone(randomeNumber());
 		
@@ -38,7 +38,7 @@ public class TC_001_AccountRegistrationTest extends BaseClass {
 		
 		regpage.clickContinue();
 		logger.info("Clicked on continue");
-		
+		Thread.sleep(2000);
 		String confmsg=regpage.getConfirmationMsg();
 		
 		Assert.assertEquals(confmsg, "Your Account Has Been Created!");

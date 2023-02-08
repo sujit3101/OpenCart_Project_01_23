@@ -7,13 +7,13 @@
   <test thread-count="5" name="Test_TC_001(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_LoginDataDrivenTest">
+      <class name="testCases.TC_003_LogoutTest">
         <methods>
           <include name="tearDown"/>
-          <include name="test_LoginDDT" invocation-numbers="0 4"/>
+          <include name="logout_Test"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC_LoginDataDrivenTest -->
+      </class> <!-- testCases.TC_003_LogoutTest -->
     </classes>
   </test> <!-- Test_TC_001(failed) -->
 </suite> <!-- Failed suite [AccountRegistrationSuite] -->
